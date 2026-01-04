@@ -39,11 +39,11 @@ The dataset is **not** included in this repository. Please download it from Kagg
 ### Step 1: Download
 You can download it manually or via the Kaggle API:
 ```bash
-kaggle datasets download -d astraszab/facial-expression-dataset-image-folders-fer2013
+kaggle datasets download -d astraszab/facial-expression-dataset-image-folders-fer2013 --unzip
 ```
 
 ### Step 2: Placement (IMPORTANT)
-After unzipping `archive.zip`, you will get a folder named `archive/`. 
+After unzipping the downloaded Kaggle zip file, you will typically get a folder named archive/.
 **Rename or move `archive/` to `data/` in the project root.** 
 
 Your project structure **must** look like this:
@@ -74,7 +74,7 @@ We provide two pretrained checkpoints to reproduce our reported numbers:
 | **E0 (Baseline)** | 0.633 | 0.534 | 0.069 | **0.375** |
 
 ### How to use:
-1. Download the `.pt` files from the [GitHub Releases](https://github.com/your-username/your-repo/releases) page.
+1. Download the `.pt` files from the [GitHub Releases](https://github.com/HarryITdeveloper/fer2013-imbalance-aware) page.
 2. Place them into the `pretrained/` folder:
    - `<repo_root>/pretrained/E5_balanced_best.pt`
    - `<repo_root>/pretrained/E0_match_best.pt`
